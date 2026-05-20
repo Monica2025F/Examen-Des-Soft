@@ -1,6 +1,6 @@
 // src/routes/index.js
     import { Router } from 'express';
-    import productRoutes from './src/routes/productRoutes.js'
+    import medico from './src/routes/medicoRoutes.js'
     // ... aqui importaríamos routers de otros modelos
 
     /*
@@ -8,15 +8,15 @@
     */
     const router = Router(); 
     
-    app.use('/api/products', productRoutes)
+    app.use('/api/medico', medicotRoutes)
     
     export default router;
     
-  //Cargamos las Rutas en `app.js`:**
+  //Cargamos las Rutas en `app.js`
     //Modifica tu archivo `app.js` para cargar rutas:
 
     import routes from './routes/index.js';
     
-    // --- Montar las rutas (antes de `app.listen(...)`) ---
+    // --- Montar las rutas (antes de `app.listen
     app.use('/', routes);
     
